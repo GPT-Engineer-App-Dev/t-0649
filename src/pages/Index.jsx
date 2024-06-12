@@ -52,7 +52,7 @@ const Index = () => {
             value={editTaskId ? editTaskText : newTask}
             onChange={(e) => editTaskId ? setEditTaskText(e.target.value) : setNewTask(e.target.value)}
           />
-          <Button onClick={editTaskId ? handleUpdateTask : handleAddTask}>
+          <Button colorScheme="green" onClick={editTaskId ? handleUpdateTask : handleAddTask}>
             {editTaskId ? "Update Task" : "Add Task"}
           </Button>
         </HStack>
